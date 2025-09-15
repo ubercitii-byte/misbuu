@@ -1,2 +1,61 @@
-# misbuu
-"Personal website for Misbah Shaikh”
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misbah Shaikh - Enchanting Moments</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+      font-family: 'Georgia', serif;
+    }
+    .hero-image {
+      filter: brightness(0.9);
+      border: 4px solid #fff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .heart {
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center text-gray-800">
+  <div class="max-w-4xl w-full px-6 py-12">
+    <!-- Header Section -->
+    <header class="text-center mb-12">
+      <h1 class="text-5xl font-bold text-rose-600 mb-4">Misbah Shaikh</h1>
+      <p class="text-xl text-rose-500 italic">Experience Unforgettable Moments</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex flex-col md:flex-row items-center gap-8">
+      <!-- Image Section -->
+      <div class="md:w-1/2">
+        <img src="https://i.postimg.cc/159P7wsG/generated-image.jpg" alt="Misbah Shaikh" class="hero-image rounded-lg w-full max-w-md mx-auto">
+      </div>
+
+      <!-- Info Section -->
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-3xl font-semibold text-rose-600 mb-4">Welcome to My World</h2>
+        <p class="text-lg mb-4">Indulge in a romantic escape with me, Misbah Shaikh. Let’s create memories filled with warmth, elegance, and charm.</p>
+        <p class="text-lg mb-4"><span class="font-bold">Location:</span> Behram Nagar, Bandra East, Mumbai, Maharashtra</p>
+        <p class="text-lg mb-6"><span class="font-bold">Contact:</span> <a href="tel:+919653246685" class="text-rose-500 hover:underline">+91 96532 46685</a></p>
+        <div class="flex justify-center md:justify-start">
+          <span class="text-4xl text-red-500 heart">♥</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="mt-12 text-center">
+      <p class="text-sm text-gray-600">Crafted with <span class="text-red-500">♥</span> for unforgettable experiences</p>
+    </footer>
+  </div>
+</body>
+</html>
